@@ -18,6 +18,16 @@
     --foreground: #ededed;
   }
 }
+@font-face {
+  font-family: "MyFont";
+  src: url("/fonts/font1.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.custom-font {
+  font-family: "MyFont", sans-serif;
+}
+
 
 body {
   background: var(--background);
