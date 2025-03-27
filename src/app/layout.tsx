@@ -25,20 +25,24 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      <header className="header button custom-font w-full flex justify-between items-center p-4 shadow-sm bg-custom-grey">          <div className="flex-1"></div>
+      <header className="header button custom-font w-full flex justify-between items-center p-4 shadow-sm bg-custom-grey">       
+        <div className="flex-1">
+        <button className="text-white hover:text-blue-500 text-lg">
+          Jose Nunez</button>
+          </div>
           <nav className="flex gap-6 justify-center">
             <button className="text-white hover:text-blue-500 text-lg">
               Resume</button>
 
-            <button className="text-gray-800 hover:text-blue-500 text-lg">
-              Socials</button>
-
-            <button className="text-gray-800 hover:text-blue-500 text-lg">
+            <button className="text-white hover:text-blue-500 text-lg">
               Home</button>
+
+            <button className="text-white hover:text-blue-500 text-lg">
+              Socials</button>
 
           </nav>
           <div className="flex-1 flex justify-end">
-            <button className="header-button text-gray-800 hover:text-blue-500 text-lg">
+            <button className="text-white hover:text-blue-500 text-lg">
               Projects</button>
           </div>
         </header>

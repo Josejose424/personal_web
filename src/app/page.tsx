@@ -2,20 +2,47 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <div className="custom-grey dark:bg-blue-800 rounded-lg shadow-md p-4 flex flex-col gap-4">
-          <h1>This is a Test </h1>
-          <p className="text-gray-700 dark:text-gray-300">
-            This is a test of the Next.js application with Tailwind CSS and
-            custom fonts.
-          </p>
-          <button className="bg-red-500 text-white px-4 py-2 rounded">
-            Click Me
-          </button>
-        </div>
-       
-      </main>
+    <div>
+      {/* White background section */}
+      <div className="grid items-center justify-items-center h-[750px] bg-white">
+        <main className="grid grid-cols-6 grid-rows-4 gap-4 w-full max-w-7xl p-4 pt-8 h-[700px] bg-neutral-800 rounded-3xl">
+          <div className="col-span-2 row-span-2 bg-neutral-900 rounded-3xl">
+            <h1 className="text-4xl text-white font-bold">Jose Nunez</h1>
+          </div>
+
+          <div className="col-span-2 row-span-1 bg-neutral-900 rounded-3xl text-center">
+            <p className="text-lg text-white">Software Engineer</p>
+          </div>
+
+          <div className="col-span-2 row-span-5 bg-neutral-900 h-full rounded-3xl text-center">
+            <p className="text-lg text-white">Full Stack Developer</p>
+          </div>
+
+          <div className="col-span-2 row-span-2 bg-neutral-900 rounded-3xl text-center">
+            <p className="text-lg text-white">Web Developer</p>
+          </div>
+
+          <div className="col-span-2 row-span-3 bg-neutral-900 rounded-3xl text-center">
+            <p className="text-lg text-white">Mobile Developer</p>
+          </div>
+
+          <div className="col-span-2 row-span-2 bg-neutral-900 rounded-3xl text-center">
+            <p className="text-lg text-white">Mobile Development</p>
+          </div>
+        </main>
+      </div>
+
+      {/* Black background section */}
+      <div className="grid grid-cols-2 grid-rows-2 gap-4 w-full max-w-7xl mx-auto p-4 mt-4 h-[400px] bg-neutral-800 rounded-3xl">
+        <div className="bg-neutral-900 rounded-3xl flex items-center justify-center text-white text-lg">Box 1</div>
+        <div className="bg-neutral-900 rounded-3xl flex items-center justify-center text-white text-lg">Box 2</div>
+        <div className="bg-neutral-900 rounded-3xl flex items-center justify-center text-white text-lg">Box 3</div>
+        <div className="bg-neutral-900 rounded-3xl flex items-center justify-center text-white text-lg">Box 4</div>
+      </div>
     </div>
   );
 }
+
+
+
+
