@@ -5,13 +5,21 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { useState } from 'react';
 
 export default function Home() {
+  
   return (
-    <div>
+    <div className="bg-white">
+      <section className="wave-section">
+        <div className="wave">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       {/* White background section */}
       <div className="grid items-center justify-items-center h-[750px] bg-white">
-        <main className="grid grid-cols-6 grid-rows-4 gap-4 w-full max-w-7xl p-4 pt-8 h-[700px] bg-neutral-800 rounded-3xl">
+        <main className="z-10 grid grid-cols-6 grid-rows-4 gap-4 w-[980px] max-w-7xl p-4 pt-8 h-[700px] bg-neutral-800 rounded-3xl">
 
           <div className="col-span-2 row-span-2 bg-neutral-900 rounded-3xl flex items-center justify-center text-white text-lg holographic-card">
             <h1 className="text-4xl text-white font-bold">Jose Nunez</h1>
@@ -29,8 +37,8 @@ export default function Home() {
             <p className="text-lg text-white">Web Developer</p>
           </div>
 
-          <div className="col-span-2 row-span-3 bg-neutral-900 rounded-3xl flex items-center justify-center text-white text-lg box-card">
-            <p className="text-lg text-white">Mobile Developer</p>
+          <div className="col-span-2 row-span-3 bg-neutral-900 rounded-3xl flex items-center justify-center text-white text-lg">
+            <p className="text-lg text-white">Color Picker Here</p>
           </div>
 
           <div className="col-span-2 row-span-2 bg-neutral-900 rounded-3xl flex flex-col items-center justify-center text-white text-lg">
@@ -52,11 +60,11 @@ export default function Home() {
           </div>
         </main>
       </div>
-      
+       </section>
 
   <div className="px-4 sm:px-8">
-    <h1 className="text-4xl font-bold flex items-center justify-center p-4 mt-8 mb-4">Skills</h1>
-    <div className="w-[700px] mx-auto bg-black rounded-3xl p-4">
+    <h1 className="text-4xl font-bold flex items-center justify-center p-4 mt-8 mb-4 text-black">Skills</h1>
+    <div className="w-[600px] mx-auto bg-custom-grey rounded-3xl p-4">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
