@@ -5,10 +5,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import { useState } from 'react';
 
 export default function Home() {
-  
   return (
     <div className="bg-white">
       <section className="wave-section">
@@ -22,11 +20,13 @@ export default function Home() {
         <main className="z-10 grid grid-cols-6 grid-rows-4 gap-4 w-[980px] max-w-7xl p-4 pt-8 h-[700px] bg-neutral-800 rounded-3xl">
 
           <div className="col-span-2 row-span-2 bg-neutral-900 rounded-3xl flex items-center justify-center text-white text-lg holographic-card">
-            <h1 className="text-4xl text-white font-bold">Jose Nunez</h1>
+
+            <img src="/csnow.png" alt="seflie" className="" />
           </div>
 
-          <div className="col-span-2 row-span-1 bg-neutral-900 rounded-3xl flex items-center justify-center text-white text-lg holographic-card">
-            <p className="text-lg text-white">Software Engineer</p>
+          <div className="col-span-2 row-span-1 bg-neutral-900 rounded-3xl flex flex-col items-center justify-center text-white text-lg holographic-card p-2">
+            <h1 className="text-4xl font-bold text-white">Welcome!</h1>
+            <p className="text-lg text-white">To my Peronsal Website :)</p>
           </div>
 
           <div className="col-span-2 row-span-5 bg-neutral-900 h-full rounded-3xl flex items-center justify-center text-white text-lg">
@@ -51,10 +51,10 @@ export default function Home() {
                 <a href="#" className="social-icon"><i className="fab fa-twitter icon" /></a>
               </li>
               <li>
-                <a href="#" className="social-icon"><i className="fab fa-linkedin-in icon" /></a>
+                <a href="https://www.linkedin.com/in/jose-n132/" className="social-icon"><i className="fab fa-linkedin-in icon" /></a>
               </li>
               <li>
-                <a href="#" className="social-icon"><i className="fab fa-instagram icon" /></a>
+                <a href="https://www.instagram.com/_jose.hal/" className="social-icon"><i className="fab fa-instagram icon" /></a>
               </li>
             </ul>
           </div>
