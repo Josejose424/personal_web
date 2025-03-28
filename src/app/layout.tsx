@@ -25,7 +25,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      <header className="header button custom-font w-full flex justify-between items-center p-4 shadow-sm bg-custom-grey">       
+      <header className="header button custom-font w-full flex justify-between items-center p-4 shadow-sm bg-custom-grey">
+      <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+          crossOrigin="anonymous"
+        />      
         <div className="flex-1">
         <button className="text-white hover:text-blue-500 text-lg">
           Jose Nunez</button>
